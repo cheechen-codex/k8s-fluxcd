@@ -5,5 +5,6 @@ metadata:
   name: nginx
   namespace: nginx
 spec:
-  uri: oci://ghcr.io/nginx/charts/nginx-ingress
+  interval: 1h
   type: oci
+  url: oci://registry.k8s.io/ingress-nginx
