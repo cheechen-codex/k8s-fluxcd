@@ -5,5 +5,5 @@ metadata:
   name: nginx
   namespace: nginx
 spec:
-  uri: oci://ghcr.io/nginx/charts
+  uri: oci://ghcr.io/nginxinc/charts
   type: oci
