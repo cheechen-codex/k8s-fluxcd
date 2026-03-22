@@ -5,14 +5,15 @@ metadata:
   name: nginx
   namespace: nginx
 spec:
+  releaseName: nginx
+  targetNamespace: nginx
+  interval: 1h # this is for drifting of the helm created resources
   chart:
     spec:
       chart: nginx-ingress
-      version: 1.2.x
+      version: "4.10.1"   # pin exact version for OCI
       interval: 5h # this is for checking of a new chart
       sourceRef:
         kind: HelmRepository
         name: nginx
-  releaseName: nginx
-  targetNamespace: nginx
-  interval: 1h # this is for drifting of the helm created resources
+        namespace: nginx
