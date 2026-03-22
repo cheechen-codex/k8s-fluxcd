@@ -10,7 +10,7 @@ spec:
   interval: 1h # this is for drifting of the helm created resources
   chart:
     spec:
-      chart: nginx-ingress
+      chart: ingress-nginx
       version: "4.10.1"   # pin exact version for OCI
       interval: 5h # this is for checking of a new chart
       sourceRef:
