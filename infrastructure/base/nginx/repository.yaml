@@ -7,4 +7,4 @@ metadata:
 spec:
   interval: 1h
   type: oci
-  url: oci://registry.k8s.io/ingress-nginx
+  url:  oci://ghcr.io/nginx/charts
