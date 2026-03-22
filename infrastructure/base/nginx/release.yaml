@@ -5,14 +5,14 @@ metadata:
   name: nginx
   namespace: nginx
 spec:
-  chart: 
+  chart:
     spec:
       chart: nginx-ingress
-      version: 2.5.x
+      version: 1.2.x
       interval: 5h # this is for checking of a new chart
-      sourceRef: 
+      sourceRef:
         kind: HelmRepository
         name: nginx
   releaseName: nginx
-  internal: 1h # this is for drifting of the helm created resources
-  timeout: 10m0s
+  targetNamespace: nginx
+  interval: 1h # this is for drifting of the helm created resources
